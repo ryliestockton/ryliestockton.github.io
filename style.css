@@ -66,7 +66,7 @@ h2, h3 {
 }
  /* portfolio styles */
  .content h1 {
-    color: black;
+    color: rgb(192, 0, 134);
 }
 
 #portfolio {
@@ -75,19 +75,19 @@ h2, h3 {
 }
 
 #portfolio li {
-    background: #fff;
+    background: #fdc5ff;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
 #portfolio li:hover {
-    background: #eee;
+    background: #ff61e7;
 }
 
 #portfolio a {
     text-decoration: none;
-    color: #454545;
+    color: #ff39f5;
 }
    /* responsive web design */
    @media screen and (min-width: 120px) and (max-width: 1080px) {
