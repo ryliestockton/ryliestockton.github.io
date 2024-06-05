@@ -2,7 +2,7 @@ body {
     background: rgb(255, 197, 242);
     color: rgb(243, 183, 233);
     padding: 10px;
-    font-family: Copperplate, Papyrus, fantasy;
+    font-family: Garamond, serif;
 }
 #all-contents {
   max-width: 800px;
@@ -17,6 +17,7 @@ nav {
     display: flex;
     padding: 10px;
     border-radius: 50px;
+    border-style: dotted;
 }
 h1 {
     display: flex;
@@ -42,6 +43,7 @@ main {
     background: rgb(245, 102, 233);
     display: flex;
     border-radius: 50px;
+    border-style: dotted; 
 }
 .sidebar {
     margin-right: 25px;
@@ -50,6 +52,7 @@ main {
 .sidebar-img {
     width: 200px;
     border-radius: 50px;
+    border-style: dotted; 
 }
 .content {
     flex: 1;
@@ -79,6 +82,7 @@ h2, h3 {
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
+    border-style: dotted;
 }
 
 #portfolio li:hover {
