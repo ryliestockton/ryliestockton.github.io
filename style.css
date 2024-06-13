@@ -2,7 +2,7 @@ body {
     background: rgb(255, 197, 242);
     color: rgb(243, 183, 233);
     padding: 10px;
-    font-family: Garamond, serif;
+    font-family:  font-family, Copperplate, Papyrus, fantasy;
 }
 #all-contents {
   max-width: 800px;
