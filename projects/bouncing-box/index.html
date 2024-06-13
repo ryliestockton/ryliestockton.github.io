@@ -11,10 +11,12 @@
       .box {
         width: 70px;
         height: 70px;
-        background-color: rgb(255, 255, 255);
-        font-family: font-family, Copperplate, Papyrus, fantasy;
+        background-color: rgb(255, 212, 255);
+        font-family: "Brush Script MT", cursive;
+        font-weight: 40;
         font-size: 300%;
         text-align: center;
+        color: rgb(201, 64, 255); 
         user-select: none;
         display: block;
         position: absolute;
@@ -53,6 +55,7 @@
            	// moves the Box to a new position on the screen along the X-Axis
            	function moveBoxTo(newPositionX) {
            		box.css("left", newPositionX);
+               box.css('top', newPositionY);
            	}
 
            	// changes the text displayed on the Box
@@ -69,6 +72,10 @@
                      var positionX = 0;
            	var points = 0;
            	var speed = 10;
+            var positionY = 0;
+           var speedY = 0;
+           var boardHeight = jQuery(window).height(); 
+
 
            	/*
            	This Function will be called 20 times/second. Each time it is called,
@@ -76,7 +83,7 @@
            	turn it around!
            	*/
            	function update() {
-          positionX = positionX + speed;
+              positionX = positionX + speed;
           moveBoxTo(positionX);
           if (positionX > boardWidth) {
             speed = -speed;
@@ -84,7 +91,14 @@
           if (positionX < -50) {
             speed = -speed;
           }
+          if (positionY > boardHeight) {
+            speedY = -speedY;
+          }
+          if (positionY < -0) {
+            speedY = -speedY;
+          }
         }
+        
 
            	/*
            	This Function will be called each time the box is clicked. Each time it is called,
